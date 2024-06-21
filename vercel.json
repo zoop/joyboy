@@ -1,6 +1,6 @@
 {
   "name": "joyboy",
-  "version": 1,
+  "version": 2,
   "alias": ["mogambo"],
   "public": false,
   "rewrites": [{ "source": "/(.*)", "destination": "/public" }]
