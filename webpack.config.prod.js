@@ -33,6 +33,10 @@ module.exports = {
         from: './src/configorigin.txt',
         to: '../build/configorigin.txt',
       },
+      {
+        from: './lib/core',
+        to: '../build/core',
+      }
     ]),
     new NodePolyfillPlugin(),
     // new MiniCssExtractPlugin({

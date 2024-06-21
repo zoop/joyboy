@@ -170,7 +170,8 @@ const App = ({ removeEventHandlers }) => {
       );
 
     async function loadInitialDocument() {
-      let initialDoc = getHashParameters('d', '');
+      // let initialDoc = getHashParameters('d', '');
+      let initialDoc = 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf&a=1';
       const isOfficeEditingEnabled = getHashParameters('enableOfficeEditing', false);
       if (!initialDoc && isOfficeEditingEnabled) {
         loadDocument(dispatch, null, {
@@ -183,7 +184,7 @@ const App = ({ removeEventHandlers }) => {
 
       const state = store.getState();
       const doesAutoLoad = getHashParameters('auto_load', true);
-      initialDoc = initialDoc ? JSON.parse(initialDoc) : '';
+      // initialDoc = initialDoc ? JSON.parse(initialDoc) : '';
       initialDoc = Array.isArray(initialDoc) ? initialDoc : [initialDoc];
       const isMultiTabAlreadyEnabled = state.viewer.isMultiTab;
       const isMultiDoc = initialDoc.length > 1;
