@@ -1,0 +1,7 @@
+{
+  "name": "joyboy",
+  "version": 1,
+  "alias": ["mogambo"],
+  "public": false,
+  "rewrites": [{ "source": "/(.*)", "destination": "/public" }]
+}
