@@ -171,7 +171,7 @@ const App = ({ removeEventHandlers }) => {
 
     async function loadInitialDocument() {
       // let initialDoc = getHashParameters('d', '');
-      let initialDoc = 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf&a=1';
+      let initialDoc = 'https://pdftron.s3.amazonaws.com/downloads/pl/demo-annotated.pdf';
       const isOfficeEditingEnabled = getHashParameters('enableOfficeEditing', false);
       if (!initialDoc && isOfficeEditingEnabled) {
         loadDocument(dispatch, null, {
