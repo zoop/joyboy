@@ -10,7 +10,6 @@ static/lib
 coverage
 build
 tests
-lib
 .eslintignore
 keys
 test/cypress/screenshotsFolder
