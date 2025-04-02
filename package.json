@@ -41,7 +41,7 @@
     "react-draggable": "^4.3.1",
     "react-i18next": "^11.3.1",
     "react-measure": "^2.3.0",
-    "react-mentions": "git+https://github.com/PDFTron/react-mentions.git",
+    "react-mentions": "0.6.4",
     "react-onclickoutside": "^6.9.0",
     "react-quill": "^2.0.0-beta.4",
     "react-redux": "^7.1.3",
