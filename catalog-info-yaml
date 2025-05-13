@@ -1,0 +1,75 @@
+# File: catalog-info.yaml
+# This is a skeleton template for your Backstage component.
+# Replace the placeholders with your actual information.
+
+apiVersion: backstage.io/v1alpha1 # Always use this version
+kind: Component # Entity type (Component, API, System, etc.)
+
+metadata:
+  # Required: Component name - use kebab-case (lowercase with hyphens)
+  name: zsp-joyboy
+
+  # Required: Brief description of what your component does
+  description: "WebViewer UI sits on top of WebViewer, a powerful JavaScript-based PDF Library that's part of the Apryse PDF SDK. Built in React, WebViewer UI provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
+
+"
+
+  # Optional: Additional structured metadata with key-value pairs
+  labels:
+    tier: frontend, backend
+    language: javascript 
+
+
+
+
+  # Optional: Tags for filtering and discovery (simple strings)
+  tags:
+    - frontend
+    - SCSS
+    - TypeScript
+    - pdf-viewer
+
+    # Add more relevant tags
+
+  # Optional: Integration annotations for connecting to external systems
+  annotations:
+    # GitHub repository location
+    github.com/project-slug: zoop/joyboy
+
+    # Enable TechDocs for documentation
+    # backstage.io/techdocs-ref: dir:.
+
+    # Other common integrations (uncomment and customize as needed)
+    # jira.com/project-key: ZK
+    # jenkins.io/job-full-name: "folder/job-name"
+    # sonarqube.org/project-key: zsp-torii
+
+  # Optional: External links related to this component
+  links:
+    - url: https://mogambo.vercel.app/
+    title: Webviewer UI
+   icon: viewer
+    # Add more relevant links
+
+spec:
+  # Required: Component type (service, website, library, etc.)
+  type: service
+
+  # Required: Lifecycle state (experimental, production, deprecated)
+  lifecycle: experimental
+
+  # Required: Owner of the component (preferably a team/group, can be an individual)
+  owner: group:zoopsign-service-owners
+
+
+  # Required: System this component belongs to
+  system: zoopsign
+
+  # Optional: Component dependencies (uncomment and customize as needed)
+  # dependsOn:
+  #   - component:default/zsp-skypiea
+  #   - component:default/zsp-kaido
+
+  # Optional: APIs provided by this component (uncomment if applicable)
+  # providesApis:
+  #   - your-api-name
