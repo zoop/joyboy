@@ -1,0 +1,44 @@
+
+apiVersion: backstage.io/v1alpha1 
+kind: Component # Entity type (Component, API, System, etc.)
+
+metadata:
+  name: zsp-joyboy
+
+  # Required: Brief description of what your component does
+  description: "WebViewer UI sits on top of WebViewer, a powerful JavaScript-based PDF Library that's part of the Apryse PDF SDK. Built in React, WebViewer UI provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project."
+
+  labels:
+    tier: frontend, backend
+    language: javascript 
+
+  tags:
+    - frontend
+    - SCSS
+    - TypeScript
+    - pdf-viewer
+
+
+  annotations:
+    github.com/project-slug: zoop/joyboy
+
+    # Enable TechDocs for documentation
+    backstage.io/techdocs-ref: dir:.
+
+
+  links:
+    - url: https://mogambo.vercel.app/
+    title: Webviewer UI
+   icon: viewer
+
+
+spec:
+  type: service
+  
+  lifecycle: experimental
+
+  owner: group:zoopsign-service-owners
+
+  system: zoopsign
+
+
